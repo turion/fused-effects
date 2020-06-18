@@ -1,5 +1,11 @@
-# v1.1
+- Adds `Accum` ([#391](https://github.com/fused-effects/fused-effects/pull/391)) (by @turion)
+  - Adds an `Accum` effect
+  - Adds a church-encoded `Control.Carrier.Accum.Church` carrier
+  - Adds a strict `Control.Carrier.Accum.Church` carrier
+  - Defines `Algebra` instances for the two mentioned carriers,
+    and for `Control.Monad.Trans.Accum` from `transformers`
 
+# v1.1
 - Adds a church-encoded `State` carrier in `Control.Carrier.State.Church`. ([#363](https://github.com/fused-effects/fused-effects/pull/363))
 
 - Adds a church-encoded `Error` carrier in `Control.Carrier.Error.Church`. ([#203](https://github.com/fused-effects/fused-effects/pull/203))
