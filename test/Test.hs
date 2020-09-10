@@ -2,6 +2,7 @@ module Main
 ( main
 ) where
 
+import qualified Accum
 import qualified Catch
 import qualified Choose
 import qualified Cull
@@ -23,7 +24,8 @@ import qualified Writer
 
 main :: IO ()
 main = defaultMain $ testGroup "unit tests"
-  [ Catch.tests
+  [ Accum.tests
+  , Catch.tests
   , Choose.tests
   , Cull.tests
   , Cut.tests
